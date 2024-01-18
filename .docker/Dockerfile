@@ -14,3 +14,6 @@ ADD web /work
 # requirements.txtにリストされたパッケージをインストール
 COPY requirements.txt /web/
 RUN pip install -r /web/requirements.txt
+
+# add test comment
+COPY ***
