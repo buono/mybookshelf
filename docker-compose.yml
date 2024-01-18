@@ -1,0 +1,14 @@
+version: '3'
+services:
+  work:
+    build:
+      context: .
+      dockerfile: ./.docker/Dockerfile
+    volumes:
+      - /web/db.sqlite3
+      #- ../web/db.sqlite3
+    ports:
+      - 8000:8000
+    container_name: mydocker
+    tty: true
+  
